@@ -1,5 +1,8 @@
-// Initialize EmailJS with your public key
-emailjs.init('0PE5MBxw8IYUjgRm8');
+// Initialize EmailJS
+(function() {
+    // Public key is exposed in client-side code, but that's okay as EmailJS requires it
+    emailjs.init('0PE5MBxw8IYUjgRm8');
+})();
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
