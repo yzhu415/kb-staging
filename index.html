@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>KB Staging</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">KB Staging</div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>KB Staging</h1>
+            <p>Transforming Houses into Timeless Homes</p>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Transform Your Property</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <p>KB Staging has been a trusted name in the San Francisco Bay Area's home staging industry for over 20 years, transforming properties into captivating homes that resonate with potential buyers. Our philosophy centers on the belief that every space has a unique story, and we bring that narrative to life with artful décor and design, inspiring buyers to envision their future in each property. By showcasing homes in their best light, our staging services not only enhance visual appeal but also significantly increase marketability, leading to faster sales and higher returns for homeowners and realtors alike. Let us help you unlock your property's full potential and make a lasting impression in today's competitive market.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="featured-projects">
+        <h2>Featured Projects</h2>
+        
+        <div class="featured-grid">
+            <!-- Hillsborough Classic -->
+            <div class="project-row">
+                <div class="project-image">
+                    <img src="images/hillsborough-classic.jpg" alt="Hillsborough Classic - Elegant traditional home with modern touches">
+                </div>
+                <div class="project-content">
+                    <h3>Hillsborough Classic</h3>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+
+            <!-- Palo Alto Mid-Century -->
+            <div class="project-row">
+                <div class="project-image">
+                    <img src="images/palo-alto-living.jpg" alt="Palo Alto Mid-Century - Modern living room with floor-to-ceiling built-in shelving">
+                </div>
+                <div class="project-content">
+                    <h3>Palo Alto Mid-Century</h3>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+            
+            <!-- City Modern -->
+            <div class="project-row">
+                <div class="project-image">
+                    <img src="images/city-modern.jpg" alt="City Modern - Contemporary urban residence with sleek finishes">
+                </div>
+                <div class="project-content">
+                    <h3>City Modern</h3>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p class="section-subtitle">Call, email, or complete the inquiry form and a member of our team will be in touch soon.</p>
+        <div class="contact-content">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="success-message" class="form-message success" style="display: none;">
+                Message sent successfully! We'll get back to you soon.
+            </div>
+            <div id="error-message" class="form-message error" style="display: none;">
+                Sorry, there was an error sending your message. Please try again.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>KB Staging</h3>
+                <p>Transforming spaces into stunning homes.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#projects">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
